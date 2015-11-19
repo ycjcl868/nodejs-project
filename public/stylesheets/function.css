@@ -1,0 +1,111 @@
+.icon-function {
+    font-family: "iconfont";
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    color: #03B5FF;
+    font-size: 4em;
+}
+
+.function {
+    width: 100%;
+    display: inline-block;
+}
+
+.function-header {
+    width: 100%;
+    height: auto;
+    background: #3373B8;
+    display: inline-block;
+}
+
+.function-header p {
+    font: 2em/45px "微软雅黑";
+    color: #fff;
+    text-align: center;
+    margin-top: 16px;
+    letter-spacing: 4px;
+}
+
+@media screen and (max-width: 763px) {
+    .icon-first {
+        font-size: 4em;
+    }
+
+    .icon-second {
+        font-size: 5em;
+    }
+
+    .function-header p {
+        font-size: 1.7em;
+        line-height: 34px;
+        margin-top: 0;
+        padding: 4px 6px;
+    }
+
+    .function-details span {
+        margin-bottom: 10px;
+    }
+}
+
+.function-content {
+    width: 100%;
+    display: inline-block;
+    margin: 15px 0;
+    overflow: hidden;
+    border-bottom: 1px dashed #3373B8;
+}
+
+.function-div {
+    text-align: center;
+    height: 188px;
+    margin: 30px 0;
+}
+
+.function-div p, .function-details p {
+    color: #3373B8;
+    letter-spacing: 3px;
+}
+
+.function-div p {
+    font: 1.5em "微软雅黑";
+}
+
+.function-details p {
+    font: 600 1.2em "微软雅黑";
+}
+
+.function-div span, .function-details span {
+    font: 1.2em/24px "微软雅黑";
+    letter-spacing: 2px;
+    width: 211px;
+    display: block;
+    margin: 0 auto;
+}
+
+.function-details span {
+    line-height: 27px;
+}
+
+.function-detail {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.function-detail > p {
+    font: 2em "微软雅黑";
+    color: #95948f;
+    letter-spacing: 10px;
+    overflow: hidden;
+    margin: 5px auto 33px;
+}
+
+.free-img {
+    margin-bottom: 15px;
+}
+
+.btn-function {
+    width: 110px;
+    margin: 18px auto 6px;
+}

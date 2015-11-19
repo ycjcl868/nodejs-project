@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- [if IE 7]>
+<html class="ie7" lang="zh-CN"> <![endif] -->
+<!-- [if IE 8]>
+<html class="ie8" lang="zh-CN"> <![endif] -->
+<!-- [if IE 9]>
+<html class="ie9" lang="zh-CN"> <![endif] -->
+<html lang="zh-CN">
+<head>
+    <% include ../partials/head %>
+    <!-- 菜单样式 -->
+    <link rel="stylesheet" href="/stylesheets/jquery.fatNav.min.css"/>
+
+
+    <!-- 自写style -->
+    <style>
+        @media (min-width: 992px) {
+            body {
+                background: #fff url("/images/bg2.png") no-repeat center center;
+                overflow: hidden;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+            }
+
+            .background {
+                display: none;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .background {
+                position: absolute;
+                width: 105%;
+                height: 120%;
+                z-index: -9999;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+<img src="/images/bg2-mobile.png" class="background" alt="Class+">
+
+<div class="row header-index">
+    <div class="header-div">
+        <div class="fat-nav">
+            <div class="fat-nav__wrapper">
+                <ul>
+                    <li><a href="/index">首页</a></li>
+                    <li><a href="/function">功能展示</a></li>
+                    <li><a href="/about_us">联系我们</a></li>
+                    <li><a href="/question">反馈意见和建议</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="col-md-2 col-md-offset-1 logo-div dropdown nav-div-phone">
+            <a href="#" id="dLabel" class="btn-drop logo-a" aria-haspopup="true"
+               aria-expanded="false" class="logo-a">
+                <img class="logo-img shine_blue" src="images/logo.png" alt="Class+ Logo" width="184" height="184"/>
+                Class<span>+</span>
+            </a>
+        </div>
+        <!-- 右上方登陆 -->
+        <div class="pull-right header-login">
+            <a href="/login" class="btn btn-login">教师登录</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- 内容Content Start -->
+<div class="row-fluid content-div-top">
+        <h1>Class<span class="blue">+</span></h1>
+        <p>老师教学辅助及互联班级的强大利器</p>
+        <p class="temp">(内测阶段，暂未开放，敬请期待！)</p>
+</div>
+<div class="row content-div-bottom">
+    <div class="col-md-2 col-md-offset-1 content-left">
+        <a class="btn btn-block content-btn-register" data-toggle="modal" data-target="#myModal">注 册</a>
+    </div>
+    <div class="col-md-offset-1 col-md-4 content-center">
+        <div class="col-md-6 content-center-div">
+            <span>15秒</span>
+            <span>即可完成注册</span>
+        </div>
+        <div class="col-md-6 content-center-div">
+            <span>中国教师</span>
+            <span>的最佳选择</span>
+        </div>
+    </div>
+    <div class="col-md-2 content-right col-md-offset-1">
+        <a id="download" href="#" class="btn content-btn-login" data-toggle="modal"
+           data-target="#gridSystemModal">下载App</a>
+        <span>对教师永久免费</span>
+    </div>
+</div>
+<!-- 内容Content End -->
+<!-- Foot Start -->
+<div class="row index-footer">
+    <div class="content-center-function">
+        <a href="/function"><span>功能|</span></a>
+        <a href="/about_us"><span>关于我们|</span></a>
+        <a href="/question"><span>更多<i class="icon-chevron-down"></i></span></a>
+    </div>
+</div>
+<!-- Foot End -->
+
+<!-- App下载 -->
+<% include ../partials/download %>
+
+<!-- 注册 -->
+<% include ../partials/register %>
+
+
+<% include ../partials/foot %>
+<!--菜单插件-->
+<script type="text/javascript" src="/javascripts/jquery.fatNav.min.js"></script>
+</body>
+</html>

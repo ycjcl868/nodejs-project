@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <% include ../partials/head %>
+</head>
+<body>
+  <% include ../partials/header %>
+
+  <div class="container">
+    <p id="error1"
+       style='text-align: center;text-align: center;font-size: 1.2em;margin: 35px 0px -40px;font-family: "arial", "微软雅黑";color: red;display: none'>
+        创建失败，请重试</p>
+
+    <p id="error2"
+       style='text-align: center;text-align: center;font-size: 1.2em;margin: 35px 0px -40px;font-family: "arial", "微软雅黑";color: red;display: none'>
+        关联失败，请重试</p>
+
+    <div class="row teacher-div">
+        <div class="col-md-5">
+            <a href="#" class="btn btn-register" data-toggle="modal" data-target="#createClass">创建班级</a>
+            <p>建议：班主任创建班级</p>
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+            <a href="#" class="btn btn-login" data-toggle="modal" data-target="#relateClass">关联班级</a>
+
+            <p>已有同事关联班级</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- 内容Content Start -->
+<!-- 创建班级模态框 -->
+<div class="modal fade" id="createClass" tabindex="-1" role="dialog" aria-labelledby="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>创建班级</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+                <hr/>
+            </div>
+            <div class="modal-body">
+                <form id="createclassForm" action="http://115.28.26.202/ClassPlus/class/create"
+                      enctype="multipart/form-data" method="post">
+                    <div class="row form-div">
+                        <div class="col-md-4 col-md-offset-1">
+                            <input type="file" class="form-control" id="file"
+                                   accept="image/gif, image/jpeg,image/png,image/jpg" onchange='previewImage(this)'
+                                   name="file">
+
+                            <div id="preview">
+                                <img id="imghead" width="100" height="100" border=0 src="images/classlogo.jpg">
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <label for="grade">选择年级</label>
+                            <select name="grade" id="grade">
+                                <option value="01">小学一年级</option>
+                                <option value="02">小学二年级</option>
+                                <option value="03">小学三年级</option>
+                                <option value="04">小学四年级</option>
+                                <option value="05">小学五年级</option>
+                                <option value="06">小学六年级</option>
+                                <option value="07">初中一年级</option>
+                                <option value="08">初中二年级</option>
+                                <option value="09">初中三年级</option>
+                                <option value="10">高中一年级</option>
+                                <option value="11">高中二年级</option>
+                                <option value="12">高中三年级</option>
+                            </select>
+                            <br/>
+                            <label for="classname">班级名称：</label>
+                            <input type="text" class="form-control" name="classname" id="classname">
+                            <input type="hidden" name="account" id="account">
+                            <input type="hidden" name="Uid" value="0" id="Uid">
+                            <input type="hidden" name="Scname" value="0" id="Scname">
+                            <input type="hidden" name="Address" value="0" id="Address">
+                            <input type="hidden" name="Latitude" value="0" id="Latitude">
+                            <input type="hidden" name="Longitude" value="0" id="Longitude">
+                            <label for="city_1">选择地区:</label>
+                            <div id="city_1">
+                                <select class="prov"></select>
+                                <select id="city" class="city" disabled="disabled"></select>
+                            </div>
+                            <label for="q">选择学校：<span>（输入学校全称，例如：西安市高新第一中学）</span></label>
+                            <input class="form-control" type="text"  id="q"/>
+                            <ul id="ul1">
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="row form-submit">
+                        <button type="submit" class="btn btn-register" id="file-submit">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 关联班级模态框 -->
+<div class="modal fade" id="relateClass" tabindex="-1" role="dialog" aria-labelledby="myModal">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body relate-div">
+                <h2>关联你的班级</h2>
+                <form action="./controller/relateProcess.php" id="relateForm" method="get">
+                    <div class="input-group input-group-lg">
+                        <!--                        <span class="input-group-addon" id="basic-addon1">@</span>-->
+                        <input type="text" id="caccount" class="form-control" placeholder="@请输入班级编码"
+                               aria-describedby="basic-addon1"
+                               name="caccount">
+                        <a href="javascript:;" class="support-a" tabindex="0" role="button"  data-toggle="popover" data-trigger="focus"   data-placement="right" data-content="班级账号是四位阿拉伯数字" aria-describedby="popover692110"><img class="support-img" src="images/support.png" alt=""/></a>
+
+                        <input type="hidden" id="taccount" name="taccount">
+                    </div>
+                    <input type="submit" class="btn btn-block btn-register" value="开始全新体验！">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 内容Content End -->
+
+
+
+  <% include ../partials/footer %>
+  <% include ../partials/foot %>
+  <script type="text/javascript" src="/javascripts/jquery.cityselect.js"></script>
+  <script type="text/javascript" src="/javascripts/teacher-index.js"></script>
+
+
+</body>
+</html>
+
+

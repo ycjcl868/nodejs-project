@@ -1,8 +1,9 @@
-﻿body {
+body {
     padding: 0px !important;
     margin: 0px !important;
 }
 
+/*清除下划线*/
 a {
     color: #fff;
 }
@@ -11,12 +12,17 @@ a {
     color: #03b5ff;
 }
 
-a:focus, a:hover, a:active {
+a:focus,
+a:hover,
+a:active {
     text-decoration: none;
 }
 
+/*header start*/
 .header {
     background: rgba(245, 245, 245, 0.45);
+    -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
     height: 80px;
     margin-right: 0px;
@@ -24,29 +30,12 @@ a:focus, a:hover, a:active {
 
 .header-index {
     height: 80px;
-    margin-right: 0;
-    width: 100%;
-    position: absolute;
-    top: 15px;
+    margin-right: 0px;
 }
 
 .header-div {
-    line-height: 60px;
+    line-height: 60px;;
     height: 80px;
-}
-
-.hamburger__icon, .hamburger__icon:before, .hamburger__icon:after {
-    background-color: #fff!important;
-}
-
-.hamburger {
-    top: 28px!important;
-    left: 69px!important;
-    position:absolute;
-}
-
-.fat-nav li a {
-    font-family: "arial", "微软雅黑";
 }
 
 .logo-div {
@@ -68,29 +57,28 @@ a:focus, a:hover, a:active {
     }
 }
 
-.logo-a, .logo-a:hover {
+.logo-a,
+.logo-a:hover {
     color: #fff;
-    font: 600 36px 'century Gothic';
+    font:600 36px 'century Gothic';
 }
 
-.login-page, .login-page:hover {
+.login-page,
+.login-page:hover {
     color: rgba(211, 211, 211, 1);
 }
 
 .logo-img {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     position: relative;
-    top: -5px;
+    top: -2px;
     border-radius: 50%;
 }
 
-.logo-a span:nth-child(2), .content-div-top > p span {
+.logo-a span:nth-child(2),
+.content-p > p span {
     color: #03b5ff;
-}
-
-.logo-a span:nth-child(3) {
-    color: #FAFB03;
 }
 
 .nav-div {
@@ -99,7 +87,8 @@ a:focus, a:hover, a:active {
 }
 
 .nav > li > a {
-    font: bold 18px "微软雅黑";
+
+    font:bold 18px "微软雅黑";
     color: #03b5ff;
     text-transform: uppercase;
 }
@@ -112,31 +101,40 @@ a:focus, a:hover, a:active {
     margin-left: 0px;
 }
 
-.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
     background-color: #03b5ff;
     font-weight: 800;
 }
+
+/*手机导航*/
 .nav-div-phone {
     float: left;
 }
+
 .dropdown-menu {
     top: 76px;
     left: 27px;
 }
+
 .header-login {
-    line-height: 64px;
+    line-height: 80px;
     color: #fff;
     padding: 0px;
     float: right;
 }
-.header-login > a, .header-login .nav-div-phone > a {
+
+.header-login > a,
+.header-login .nav-div-phone > a {
     margin-right: 23px;
 }
 
 .btn-drop {
     position: absolute;
-    top: 0;
+    top: 0px;
     width: 300px;
+
 }
 
 .header-login .btn {
@@ -144,30 +142,43 @@ a:focus, a:hover, a:active {
     font-family: "微软雅黑";
 }
 
-.content-btn-login, .btn-login, .content-btn-register, .btn-register, .btn-drop {
+.content-btn-login,
+.btn-login,
+.content-btn-register,
+.btn-register,
+.btn-drop {
     padding: 10px 18px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
-.content-btn-register, .btn-register {
+.content-btn-register,
+.btn-register {
     background-color: #03b5ff;
     color: #fff;
     border-color: #03b5ff;
 }
 
-.content-btn-register:hover, .content-btn-register:active, .btn-register:hover, .btn-register:active {
+.content-btn-register:hover,
+.content-btn-register:active,
+.btn-register:hover,
+.btn-register:active {
     background-color: rgba(255, 255, 255, .2);
     border-color: #03b5ff;
     color: #03b5ff;
 }
 
-.btn-login, .content-btn-login {
+.btn-login,
+.content-btn-login {
     background-color: #fff;
     color: #03b5ff;
     border-color: #fff;
 }
 
-.content-btn-login:hover, .btn-login:hover {
+.content-btn-login:hover,
+.btn-login:hover {
     background-color: rgba(3, 181, 255, .5);
     color: #fff;
     border-color: #03b5ff;
@@ -178,7 +189,7 @@ a:focus, a:hover, a:active {
 }
 
 #gridSystemModal {
-    top: 0;
+    top: 0px;
 }
 
 @media (max-width: 767px) {
@@ -187,70 +198,43 @@ a:focus, a:hover, a:active {
     }
 }
 
+/*header end*/
+
+/*Content Start*/
 @media (max-width: 892px) {
     .content-div-top {
         height: 250px;
-        top: 7% !important;
-        padding: 10px 0 0;
-        position: relative;
     }
 
-    .header-index {
-        position: relative;
-    }
-
-    .content-div-top p {
+    .content-div-top .content-p p {
         letter-spacing: 4px !important;
     }
 }
 
-.contact-div-top {
-    position: absolute;
-    left: 0;
-    top: 10%;
-    width: 100%;
-}
-
-.contact-div-top {
-    width: 100%;
-    position: absolute;
-    bottom: 37%;
-}
-
-.content-div-top {
+.content-div-top .content-p {
     text-align: center;
     color: #fff1f0;
-    position: absolute;
-    width: 100%;
-    bottom: 350px;
+    padding: 80px 0 130px;
 }
 
-.content-div-top h1 {
-    font-weight: 500;
-    font-size: 4.5em;
-    line-height: 70px;
-    font-family: "century Gothic", "黑体";
-    margin: 0;
+@media (max-width: 892px) {
+    .content-div-top .content-p {
+        padding: 10px 0 0px;
+    }
 }
 
-.content-div-top p {
-    font-weight: 500;
-    font-size: 2.5em;
-    font-family: "arial", "微软雅黑";
+.content-div-top .content-p h1 {
+    font:500 4.5em/70px "century Gothic", "黑体";
+}
+
+.content-div-top .content-p h1 p {
+    font:500 0.6em "arial", "微软雅黑";
     letter-spacing: 8px;
-}
-.content-div-top .temp{
-    font-size: 1.3em;
-    letter-spacing: 0;
 }
 
 .content-div-bottom {
     margin: 35px auto 30px;
-    padding: 10px 0 0;
-    position: absolute;
-    width: 100%;
-    bottom: 72px;
-    left: 0;
+    padding: 10px 0px 0px;
 }
 
 .content-right {
@@ -260,8 +244,9 @@ a:focus, a:hover, a:active {
     display: block;
 }
 
-.content-left a, .content-right a {
-    font: 700 1.2em "arial", "微软雅黑";
+.content-left a,
+.content-right a {
+    font:700 1.2em  "arial", "微软雅黑";
     margin: 5px auto;
 }
 
@@ -283,34 +268,21 @@ a:focus, a:hover, a:active {
     display: block;
 }
 
-.index-footer {
-    position: absolute;
-    bottom: 62px;
-    left: 0;
-    width: 100%;
-}
-
-.content-center div span, .index-footer span {
+.content-center div span,
+.index-footer span {
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-family: "century Gothic", "黑体";
+
 }
 
 .content-center .content-center-div:nth-child(1) {
     border-right: 2px dashed #fff;
 }
 
-.content-center-div span {
-    display: block;
-    text-align: center;
-}
-
-.content-center-div span:nth-child(2) {
-    font-size: 1.1em;
-}
-
 @media (max-width: 992px) {
-    .logo-a, .logo-a:hover {
+    .logo-a,
+    .logo-a:hover {
         color: rgba(0, 0, 0, 0);
     }
 
@@ -318,28 +290,17 @@ a:focus, a:hover, a:active {
         display: none;
     }
 
-    .content-div-top p {
+    .content-p p {
         line-height: 60px;
-        font-size: 2em;
-    }
-    .content-div-top .temp{
-        font-size: 0.3em;
-       line-height: 0;
-
     }
 
-    .content-div-top {
-        margin: 0;
-        bottom: 0;
-        padding: 0 5px;
-        position: relative;
+    .content-div-top .content-p {
+        margin: 0px;
     }
 
     .content-div-bottom {
-        margin: 0 auto 0;
-        padding: 0;
-        bottom: 0;
-        position: relative;
+        margin: 0px auto 0px;
+        padding: 0px;
     }
 
     .content-center {
@@ -363,11 +324,6 @@ a:focus, a:hover, a:active {
         width: 100%;
         margin-left: 0px;
     }
-
-    .index-footer {
-        position: relative;
-        bottom: 0;
-    }
 }
 
 .content-center-function {
@@ -382,11 +338,23 @@ a:focus, a:hover, a:active {
     }
 }
 
+.content-center-div span {
+    display: block;
+    text-align: center;
+}
+
+.content-center-div span:nth-child(2) {
+    font-size: 1.2em;
+}
+
 .content-center-function span {
     font-size: 1.2em;
 }
 
 .content-center-function span {
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
     transition: color .5s;
 }
 
@@ -412,23 +380,38 @@ a:focus, a:hover, a:active {
     .download a img {
         margin-top: 18px;
     }
+
 }
 
+/*Content End*/
+
+/*footer Start*/
 .footer {
     display: block;
     text-align: center;
     background-color: #505050;
     height: auto;
+
 }
+
+/*.footer-bottom {*/
+/*display: inline-block;*/
+/*padding: 8px;*/
+/*}*/
 
 .footer div a p {
     color: #bbb;
-    font: 1em/16px "arial", "微软雅黑";
+    font:1.2em/22px "arial", "微软雅黑";
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
     transition: color .5s;
 }
 
 .footer p:hover {
     color: #fff;
+
 }
 
 .footer .row:nth-child(1) {
@@ -436,8 +419,7 @@ a:focus, a:hover, a:active {
 }
 
 .footer .row .col-md-4 {
-    border-right: 1px dotted #bbb;
-    margin-top: 12px;
+    border-right: 1px solid #bbb;
 }
 
 .footer .row .contact-div .abc {
@@ -448,10 +430,15 @@ a:focus, a:hover, a:active {
     .footer .row .contact-div .abc {
         display: none !important;
     }
+
 }
 
 .footer-bottom a {
     color: #B4B4B4;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -ms-transition: color .3s;
+    -o-transition: color .3s;
     transition: color .3s;
 }
 
@@ -464,18 +451,110 @@ a:focus, a:hover, a:active {
     line-height: 26px;
     color: #B4B4B4;
     font-family: "Microsoft Yahei";
-    font-size: 8px;
+    font-size: 15px;
 }
 
-.footer .wechat img{
-    position: absolute;
-    top: -114px;
-    left: 36%;
-    display:none;
-}
+/*.footer-bottom p:nth-child(1) {*/
+/*margin-top: 7px;*/
+/*}*/
 
+/*.footer-sns {*/
+/*width: 208px;*/
+/*display: inline-block;*/
+/*margin-top: 30px;*/
+/*}*/
+
+/*@media (max-width: 667px) {*/
+/*.footer-sns {*/
+/*margin-top: 0px;*/
+/*}*/
+
+/*}*/
+
+/*.footer-sns span {*/
+/*color: #fff;*/
+/*font-family: "arial", "微软雅黑";*/
+/*float: left;*/
+/*}*/
+
+/*.footer-sns hr {*/
+/*margin-bottom: 5px;*/
+/*}*/
+
+/*.footer-sns ul {*/
+/*color: #fff;*/
+/*list-style: none;*/
+/*display: inline-block;*/
+/*padding-left: 0px;*/
+/*}*/
+
+/*.footer-sns ul li {*/
+/*display: inline-block;*/
+/*float: left;*/
+/*margin-right: 5px;*/
+/*}*/
+
+/*.footer-sns .contact li {*/
+/*margin-right: 14px;*/
+/*}*/
+
+/*.footer-sns ul li a {*/
+/*display: block;*/
+/*width: 30px;*/
+/*height: 30px;*/
+/*transition: .5s color;*/
+/*-webkit-transition: .5s all;*/
+/*-moz-transition: .5s all;*/
+/*-o-transition: .5s all;*/
+/*-ms-transition: .5s all;*/
+/*}*/
+
+/*.footer-sns ul .qq {*/
+/*background: url("../img/icons-sp.png") no-repeat 0px 0px;;*/
+/*}*/
+
+/*.footer-sns ul .qq:hover {*/
+/*background: url("../img/icons-sp.png") no-repeat 0px -31px;;*/
+/*}*/
+
+/*.footer-sns ul .pyq {*/
+/*background: url("../img/icons-sp.png") no-repeat -30px 0px;;*/
+/*}*/
+
+/*.footer-sns ul .pyq:hover {*/
+/*background: url("../img/icons-sp.png") no-repeat -30px -31px;;*/
+/*}*/
+
+/*.footer-sns ul .wb {*/
+/*background: url("../img/icons-sp.png") no-repeat -63px 0px;;*/
+/*}*/
+
+/*.footer-sns ul .wb:hover {*/
+/*background: url("../img/icons-sp.png") no-repeat -63px -31px;;*/
+/*}*/
+
+/*.footer-sns ul .wx {*/
+/*background: url("../img/icons-sp.png") no-repeat -96px 0px;;*/
+/*}*/
+
+/*.footer-sns ul .wx:hover {*/
+/*background: url("../img/icons-sp.png") no-repeat -96px -31px;;*/
+/*}*/
+
+/*.footer-sns ul .qqzone {*/
+/*background: url("../img/icons-sp.png") no-repeat -128px 0px;;*/
+/*}*/
+
+/*.footer-sns ul .qqzone:hover {*/
+/*background: url("../img/icons-sp.png") no-repeat -128px -31px;;*/
+/*}*/
+
+/*footer End*/
+
+/*Search 搜索*/
 .question-div {
-    background: url("../images/search.jpg") no-repeat center center;
+    background: url("../img/search.jpg") no-repeat center center;
+    -webkit-background-size: cover;
     background-size: cover;
     height: 260px;
 }
@@ -490,6 +569,7 @@ a:focus, a:hover, a:active {
 
 .question-div p:nth-child(1) {
     margin-top: 35px;
+
 }
 
 .question-div p:nth-child(2) {
@@ -515,6 +595,7 @@ a:focus, a:hover, a:active {
         margin: 20px 0 20px;
         letter-spacing: 0px;
     }
+
 }
 
 .search-div input[type=text] {
@@ -523,7 +604,7 @@ a:focus, a:hover, a:active {
 
 .main {
     margin: 0 auto;
-    width: 88%;
+    width: 80%;
 }
 
 #help h2, #down h2 {
@@ -551,6 +632,7 @@ a:focus, a:hover, a:active {
     #help dd {
         font-size: 1.2em;
     }
+
 }
 
 #help dd {
@@ -572,35 +654,21 @@ a:focus, a:hover, a:active {
 }
 
 #help dt i, #help dd i {
-    font-family: "iconfont";
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
+    background: url("../img/icons-sp.png") no-repeat;
     width: 37px;
     height: 36px;
     display: block;
     position: absolute;
+    left: -40px;
+    top: 0px;
 }
 
 #help dt i {
-    color: #03B5FF;
-    font-size: 1.3em;
-    left: -43px;
-    top: -6px;
-}
-
-@media screen and (max-width: 764px) {
-    #help dt i {
-        font-size: 1.7em;
-        left: -43px;
-        top: -12px;
-    }
+    background-position: -4px -185px;
 }
 
 #help dd i {
-    color: #03B5FF;
-    font-size: 1.8em;
-    left: -43px;
-    top: 8px;
+    background-position: -38px -188px;
 }
 
 #help .mb {
@@ -612,7 +680,7 @@ a:focus, a:hover, a:active {
     width: 180px;
     padding: 10px 0 10px 15px;
     margin-bottom: 10px;
-    font: 700 1.8em "arial", "微软雅黑";
+    font:700 1.8em "arial", "微软雅黑";
 }
 
 .about-us > .p1 {
@@ -621,9 +689,22 @@ a:focus, a:hover, a:active {
     padding: 0px 12px 0px;
 }
 
+/*.about-us-content{*/
+/*width: 100%;*/
+/*height: auto;*/
+/*background: #f0f0f0;*/
+/*-webkit-border-radius: 5px;*/
+/*-moz-border-radius: 5px;*/
+/*border-radius: 5px;*/
+/*-webkit-box-shadow: 4px 4px 21px 1px #bbb;*/
+/*-moz-box-shadow: 4px 4px 21px 1px #bbb;*/
+/*box-shadow: 4px 4px 21px 1px #bbb;*/
+/*margin-bottom: 20px;*/
+/*}*/
+
 .panel-title > a {
     display: block;
-    font: normal 21px "微软雅黑";
+    font:normal 21px "微软雅黑";
 }
 
 .panel-body {
@@ -654,12 +735,12 @@ a:focus, a:hover, a:active {
 
 .teacher-div div a {
     padding: 19px 28px;
-    font: 500 1.5em "century Gothic", "华文中宋";
+    font:500 1.5em "century Gothic", "华文中宋";
     letter-spacing: 7px;
 }
 
 .teacher-div div p {
-    font: 500 1.3em/40px "arial", "微软雅黑";
+    font:500 1.3em/40px "arial", "微软雅黑";
 }
 
 .teacher-div div:nth-child(1) a {
@@ -670,7 +751,7 @@ a:focus, a:hover, a:active {
 
 .teacher-div:nth-child(1) a:hover {
     background-color: #03b5ff;
-    color: #fff;
+    color: #fff;;
 }
 
 .teacher-div div:nth-child(2) {
@@ -686,7 +767,7 @@ a:focus, a:hover, a:active {
 .teacher-div div:nth-child(2) a:hover {
     background-color: #fff;
     color: #03b5ff;
-    border-color: #03b5ff;
+    border-color: #03b5ff;;
 }
 
 .teacher-div div {
@@ -694,16 +775,17 @@ a:focus, a:hover, a:active {
     height: 238px;
 }
 
-#createClass, #relateClass {
+#createClass,
+#relateClass {
     top: 100px;
 }
-
-.popover-content {
+.popover-content{
     width: 106px;
     line-height: 22px;
 }
 
-#relateClass .modal-dialog .modal-header, #createClass .modal-dialog .modal-header {
+#relateClass .modal-dialog .modal-header,
+#createClass .modal-dialog .modal-header {
     border-bottom: none;
 }
 
@@ -719,6 +801,7 @@ a:focus, a:hover, a:active {
 .relate-div input {
     font-size: 1.5em;
     font-family: "century Gothic", "黑体";
+
 }
 
 #preview {
@@ -758,11 +841,13 @@ a:focus, a:hover, a:active {
     cursor: pointer;
 }
 
-#createClass input[type=text], #createClass select, #createClass input[type=button] {
+#createClass input[type=text],
+#createClass select,
+#createClass input[type=button] {
     margin-bottom: 15px;
 }
 
-#createClass input[type=text] {
+#createClass input[type=text]{
     width: 100%;
     height: 36px;
 }
@@ -774,10 +859,9 @@ a:focus, a:hover, a:active {
     letter-spacing: 5px;
 }
 
-#createClass select {
+#createClass select{
     height: 37px;
 }
-
 #createClass select[id="grade"] {
     width: 100%;
 }
@@ -785,8 +869,7 @@ a:focus, a:hover, a:active {
 #createClass .form-div {
     display: inline;
 }
-
-#createClass #preview {
+#createClass #preview{
     margin: 0 auto;
 }
 
@@ -805,8 +888,7 @@ a:focus, a:hover, a:active {
     font-size: 1.2em;
     margin-top: 3px;
 }
-
-#createClass label span {
+#createClass label span{
     font-size: 0.5em;
     font-weight: 500;
     letter-spacing: -1.5px;
@@ -832,20 +914,8 @@ a:focus, a:hover, a:active {
     display: none;
     list-style: none;
 }
-
-.schoolLi {
-    line-height: 30px;
-    padding: 5px;
-    text-decoration: none;
-    color: black;
-    display: block;
-    cursor: pointer
-}
-
-.schoolLi:hover {
-    background: #03b5ff;
-    color: white;
-}
+.schoolLi {line-height: 30px;padding: 5px;text-decoration: none;color: black;display: block;cursor: pointer}
+.schoolLi:hover {background: #03b5ff;color: white;}
 
 label.error {
     margin: 7px 0 10px 5px;
@@ -855,7 +925,7 @@ label.error {
     display: none;
     font-weight: 500;
     float: left;
-    background: url("../images/error.png") no-repeat;
+    background: url("../img/error.png") no-repeat;
     padding-left: 20px;
     background-size: 20px;
 }
@@ -866,7 +936,7 @@ label.valid {
     width: 20px;
     height: 20px;
     float: left;
-    background: url("../images/success.png") no-repeat;
+    background: url("../img/success.png") no-repeat;
     background-size: 20px 20px;
 }
 
@@ -879,17 +949,20 @@ label.valid {
     display: inline-block;
     width: 92%;
 }
-
-#relateClass .support-a {
+#relateClass .support-a{
     float: right;
     display: inline-block;
 }
-
-#relateClass .support-img {
+#relateClass .support-img{
     width: 40px;
 }
 
+/*---------------------------login登陆-------------------------------------*/
+/*------- RESPONSIVE 登陆 -------*/
+
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -941,7 +1014,7 @@ form {
 
 .divider {
     color: #656564;
-    font: 13px/37px "Microsoft YaHei", "微软雅黑";
+    font:13px/37px "Microsoft YaHei", "微软雅黑";
     text-align: center;
     margin: 10px -5px 40px;
 }
@@ -950,7 +1023,12 @@ form {
     float: left;
 }
 
+/* ----------- Widget ----------- */
+
 .widget {
+    /*margin-bottom: 15px;   */
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
     border-radius: 3px 3px 3px 3px;
     overflow: hidden;
 }
@@ -961,6 +1039,8 @@ form {
 
 .widget-header {
     background-color: #efefef;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
     border-radius: 3px 3px 0 0;
     min-height: 51px;
     border: 1px solid #DDDDDD;
@@ -974,7 +1054,7 @@ form {
 
 .widget-header > i {
     font-size: 16px;
-    padding: 13px 10px 15px 19px;
+    padding: 15px 10px 15px 11px;
     text-align: center;
     width: 40px;
 }
@@ -1055,6 +1135,7 @@ form {
     float: right;
     display: inline;
     color: #E28271;
+
 }
 
 .widget-analytics-small h5 {
@@ -1070,12 +1151,43 @@ form {
     margin: 5px 0;
 }
 
+/* ----------- user interface ----------- */
+
+/* responsive css */
+
+/* Landscape phone to portrait tablet */
+
+/* ----- 注册表单  Start----- */
+
 .login-form .control-group {
     margin-bottom: 10px;
 }
 
 .login-form .control-group:nth-child(3) {
     margin-top: 10px;
+}
+
+label.error {
+    margin: 7px 0 10px 5px;
+    font-size: 16px;
+    text-align: left;
+    color: #eb4141 !important;
+    display: none;
+    font-weight: 500;
+    float: left;
+    background: url("../img/error.png") no-repeat;
+    padding-left: 20px;
+    background-size: 20px;
+}
+
+label.valid {
+    margin: 7px 0 10px 5px;
+    text-align: left;
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: url("../img/success.png") no-repeat;
+    background-size: 20px 20px;
 }
 
 input {
@@ -1110,20 +1222,28 @@ input:focus {
     cursor: pointer;
 }
 
-.login-div button, .modal-footer button[type="submit"] {
+.login-div button,
+.modal-footer button[type="submit"] {
     padding: 10px 18px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
     background-color: #03b5ff;
     color: #fff;
     border-color: #03b5ff;
     font-size: 16px;
     font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+
 }
 
-.login-div button:hover, .modal-footer button[type="submit"]:hover {
-    background-color: #006dcc;
-    border-color: #006dcc;
+.login-div button:hover,
+.modal-footer button[type="submit"]:hover {
+    background-color: #006dcc;;
+    border-color: #006dcc;;
 }
+
+/* 注册 模态框 */
 
 .modal-header {
     font-family: "微软雅黑";
@@ -1133,22 +1253,18 @@ input:focus {
 .modal-header h2 span {
     color: #03b5ff;
 }
-@font-face {
-  font-family: 'iconfont';
-  src: url('//at.alicdn.com/t/font_1447545690_831914.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/font_1447545690_831914.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/font_1447545690_831914.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/font_1447545690_831914.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/font_1447545690_831914.svg#iconfont') format('svg'); /* iOS 4.1- */
+
+@font-face {font-family: 'iconfont';
+    src: url('../icon/iconfont.eot'); /* IE9*/
+    src: url('../icon/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../icon/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../icon/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../icon/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
-
-
-
-.iconfont {
-    font-family: "iconfont" !important;
-    font-size: 16px;
-    font-style: normal;
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
@@ -1161,52 +1277,58 @@ input:focus {
     margin: 0px auto;
     text-align: center;
     padding: 0px;
-    color: #03b5ff;
+    color:#03b5ff ;
 }
 
 .li-role {
     list-style: none;
     float: left;
     display: block;
-    padding: 0 20px;
+    padding:0 20px;
     margin: 0 20px;
     cursor: pointer;
-    border: 1px solid #03b5ff;
+    border:1px solid #03b5ff;
     -webkit-transition: .2s;
     -moz-transition: .2s;
     -ms-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
 }
-
-@media screen and (max-width: 615px) {
-    .ul-role {
+@media screen and (max-width: 615px){
+    .ul-role{
         font: 600 1em/35px "微软雅黑";
         height: 40px;
         width: 100%;
     }
-
-    .li-role {
+    .li-role{
         padding: 0 7px;
         margin: 0 3px;
+
     }
+
+}
+.abc{
+	
+	
 }
 
-.role-li-active {
-    color: #fff !important;
-    background: #03b5ff !important;
+
+.role-li-active{
+    color: #fff!important;
+    background: #03b5ff!important;
+}
+.role-i-active{
+    color: #fff!important;
 }
 
-.role-i-active {
-    color: #fff !important;
-}
-
-.li-role i {
+.li-role i{
     width: 20px;
     height: 20px;
     display: inline-block;
-    color: #03b5ff;
+    color:#03b5ff ;
 }
+
+
 
 .register-form label {
     float: left;
@@ -1234,6 +1356,7 @@ input:focus {
 .yzm-div {
     display: block;
     margin-top: 20px;
+
 }
 
 .yzm-div input {
@@ -1248,6 +1371,7 @@ input:focus {
     width: 28%;
 }
 
+/*闪烁动画*/
 @-webkit-keyframes shineBlue {
     from {
         -webkit-box-shadow: 0 0 30px #03b5ff;
@@ -1266,7 +1390,10 @@ input:focus {
     -webkit-animation-iteration-count: infinite;
 }
 
-input[type='button'], input[type='submit'], input[type='reset'], textarea {
+/*iOS渐变兼容*/
+input[type='button'],
+input[type='submit'],
+input[type='reset'], textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

@@ -1,0 +1,65 @@
+<!-- 注册模态框 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h2>注册到 <span><strong>Class+</strong></span></h2>
+            </div>
+            <div class="modal-body">
+                <ul class="ul-role">
+                    <li class="li-role" data-role="1"><i class="iconfont">&#xe61b;</i>我是教师</li>
+                    <li class="li-role" data-role="2"><i class="iconfont">&#xe619;</i>我是家长</li>
+                    <li class="li-role" data-role="3"><i class="iconfont">&#xe61a;</i>我是学生</li>
+                </ul>
+                <br/>
+                <!-- 注册表单 action内填入链接地址 -->
+                <form action="./controller/registerProcess.php" method="post" name="formName" id="register" class="register-form">
+                    <!-- 真实姓名name -->
+                    <label for="name">真实姓名</label>
+                    <input type="text" required id="name" name="name" placeholder="请输入你的真实姓名...">
+                    <!-- 身份role -->
+                    <br/>
+                    <!-- 性别 -->
+                    <div class="sexdiv">
+                        <label for="boy">性别：</label>
+                        <input type="radio" id="boy" name="sex" value="男" class="sex">
+                        <label for="girl"> 男</label>
+                        <input type="radio" id="girl" name="sex" value="女" class="sex">
+                        <label>女</label>
+                    </div>
+                    <br/>
+                    <br/>
+                    <!-- 手机号码number -->
+                    <label for="number">手机号码：</label>
+                    <input type="tel" required id="number" name="number" placeholder="请输入你的手机号码...">
+                    <br/>
+                    <!-- 密码password -->
+                    <label for="password1">密码：</label>
+                    <input type="password" required id="password1" name="password1" placeholder="请输入你的密码...">
+                    <!-- 确认密码password2 -->
+                    <label for="password2">确认密码：</label>
+                    <input type="password" required id="password2" name="password2" placeholder="请确认你的密码...">
+                    <!-- 验证码 -->
+                    <div class="btn-group yzm-div">
+                        <label for="captcha">验证码：</label>
+                        <input type="text" required id="phone_code" name="captcha" placeholder="请输入4位验证码">
+                        <img id="getcode" name="code" src="getcode.php" title="点击图片刷新验证码">
+                        <a id="getcode_a" name="code" src="getcode.php">看不清，点击图片</a>
+                        <!-- <input type="button" id="phone_btn" value="免费获取手机校验码"/> -->
+                    </div>
+                    <!-- 隐藏域 -->
+                    <input type="hidden" id="futid" value="" name="futid">
+                    <!-- 提交按钮 -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-register">注册</button>
+                        <button type="reset" class="btn btn-info btn-register" id="btn-reset">重新填写</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--判断登陆的用户名和密码是否错误-->
+<!--内容Content End-->

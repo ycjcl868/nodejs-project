@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <% include ../partials/head %>
+</head>
+
+<body>
+  <% include ../partials/header %>
+
+
+<!-- Content Start -->
+<div id="wrap">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="row-fluid">
+                    <div class="widget container-narrow">
+                        <div class="widget-header">
+                            <i class="iconfont">&#xe61c;</i>
+                            <h5>教师登陆</h5>
+                        </div>
+                        <div class="widget-body clearfix">
+                            <form action="/login" method="post" id="login" class="login-form">
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <!-- <label style="color:#eb4141;display: inline-block;"> -->
+                                        <input class="btn-block" type="tel" name="phone" id="inputPhone"
+                                               placeholder="手机号">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+
+                                        <input class="btn-block" type="password" name="password" id="inputPassword"
+                                               placeholder="密码">
+
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls clearfix">
+                                        <label>
+                                            <input name="remember" type="checkbox" value="1" checked>
+                                            记住登录状态
+                                        </label>
+                                        <a style="padding: 5px 0 0 5px;" href="#" class="pull-right">忘记密码？</a>
+                                    </div>
+                                </div>
+                                <div style="padding:10px 0" class="login-div">
+                                    <button type="submit" class="btn btn-large btn-block btn-primary">登 陆</button>
+                                </div>
+                            </form>
+                            <div class="divider">
+                                <hr class="pull-left">
+                                <span>没有帐号？点击注册</span>
+                                <hr class="pull-right">
+                            </div>
+                            <div style="padding:10px 0" class="login-div">
+                                <a data-toggle="modal" data-target="#myModal"
+                                   class="btn btn-large btn-block btn-primary"><i class="icon-tag"></i>注册到Class+</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--/row-fluid-->
+            </div>
+            <!--/span10-->
+        </div>
+        <!--/row-fluid-->
+    </div>
+    <!--/.fluid-container-->
+</div>
+<!-- Content End -->
+
+<% include ../partials/register %>
+
+  <% include ../partials/footer %>
+  <% include ../partials/foot %>
+</body>
+</html>

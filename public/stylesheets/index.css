@@ -1,0 +1,496 @@
+@media (min-width: 992px) {
+    body {
+        background: #fff url("../img/bg2.png") no-repeat center center;
+        overflow: hidden;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    }
+    .background {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .background {
+        position: absolute;
+        width: 105%;
+        height: 120%;
+        z-index: -9999;
+        display: block;
+    }
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 45px;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+h2 {
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+a {
+    color: #26AEF2;
+}
+
+a:focus {
+    outline: none;
+}
+
+form {
+    margin: 0;
+}
+
+
+a {
+    color: #fff;
+}
+
+.blue {
+    color: #03b5ff;
+}
+
+a:focus, a:hover, a:active {
+    text-decoration: none;
+}
+
+.header {
+    background: rgba(245, 245, 245, 0.45);
+    -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+    height: 80px;
+    margin-right: 0px;
+}
+
+.header-index {
+    height: 80px;
+    margin-right: 0;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+}
+
+.header-div {
+    line-height: 60px;
+    height: 80px;
+}
+
+.logo-div {
+    padding: 8px;
+    float: left;
+}
+
+@media (min-width: 992px) {
+    .logo-div {
+        width: 20%;
+    }
+
+    .nav-div {
+        width: 54%;
+    }
+
+    .header-login {
+        width: 17%;
+    }
+}
+
+.logo-a, .logo-a:hover {
+    color: #fff;
+    font: 600 36px 'century Gothic';
+}
+
+.login-page, .login-page:hover {
+    color: rgba(211, 211, 211, 1);
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: -2px;
+    border-radius: 50%;
+}
+
+.logo-a span:nth-child(2), .content-div-top > p span {
+    color: #03b5ff;
+}
+
+.logo-a span:nth-child(3) {
+    color: #FAFB03;
+}
+
+.nav-div {
+    float: left;
+    display: none;
+}
+
+.nav > li > a {
+    font: bold 18px "微软雅黑";
+    color: #03b5ff;
+    text-transform: uppercase;
+}
+
+.nav-pills > li > a {
+    border-radius: 0px;
+}
+
+.nav-pills > li + li {
+    margin-left: 0px;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    background-color: #03b5ff;
+    font-weight: 800;
+}
+
+.nav-div-phone {
+    float: left;
+}
+
+.dropdown-menu {
+    top: 76px;
+    left: 27px;
+}
+
+.header-login {
+    line-height: 80px;
+    color: #fff;
+    padding: 0px;
+    float: right;
+}
+
+.header-login > a, .header-login .nav-div-phone > a {
+    margin-right: 23px;
+}
+
+.btn-drop {
+    position: absolute;
+    top: 0;
+    width: 300px;
+}
+
+.header-login .btn {
+    font-weight: 800;
+    font-family: "微软雅黑";
+}
+
+.content-btn-login, .btn-login, .content-btn-register, .btn-register, .btn-drop {
+    padding: 10px 18px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.content-btn-register, .btn-register {
+    background-color: #03b5ff;
+    color: #fff;
+    border-color: #03b5ff;
+}
+
+.content-btn-register:hover, .content-btn-register:active, .btn-register:hover, .btn-register:active {
+    background-color: rgba(255, 255, 255, .2);
+    border-color: #03b5ff;
+    color: #03b5ff;
+}
+
+.btn-login, .content-btn-login {
+    background-color: #fff;
+    color: #03b5ff;
+    border-color: #fff;
+}
+
+.content-btn-login:hover, .btn-login:hover {
+    background-color: rgba(3, 181, 255, .5);
+    color: #fff;
+    border-color: #03b5ff;
+}
+
+#myModal {
+    top: 50px;
+}
+
+#gridSystemModal {
+    top: 0;
+}
+
+@media (max-width: 767px) {
+    #myModal {
+        top: 100px;
+    }
+}
+
+@media (max-width: 892px) {
+    .content-div-top {
+        height: 250px;
+        top: 7%!important;
+        padding: 10px 0 0;
+    }
+
+    .content-div-top p {
+        letter-spacing: 4px !important;
+    }
+}
+
+.contact-div-top{
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+}
+.contact-div-top{
+    width: 100%;
+    position: absolute;
+    bottom: 37%;
+}
+
+.content-div-top {
+    text-align: center;
+    color: #fff1f0;
+    position: absolute;
+    width: 100%;
+    top: 24%;
+}
+
+.content-div-top h1 {
+    font: 500 4.5em/70px "century Gothic", "黑体";
+}
+
+.content-div-top p {
+    font: 500 2.5em "arial", "微软雅黑";
+    letter-spacing: 8px;
+}
+
+.content-div-bottom {
+    margin: 35px auto 30px;
+    padding: 10px 0 0;
+    position: absolute;
+    width: 100%;
+    bottom: 72px;
+    left: 0;
+}
+
+.content-right {
+    text-align: center;
+    width: 185px;
+    margin-left: 10.5%;
+    display: block;
+}
+
+.content-left a, .content-right a {
+    font: 700 1.2em "arial", "微软雅黑";
+    margin: 5px auto;
+}
+
+.content-left a {
+    width: 155px;
+    letter-spacing: 2px;
+}
+
+.content-right a {
+    width: 155px;
+    letter-spacing: 5px;
+}
+
+.content-right span {
+    color: #fff;
+    font-family: "century Gothic", "黑体";
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    display: block;
+}
+.index-footer{
+    position: absolute;
+    bottom: 62px;
+    left: 0;
+    width: 100%;
+}
+
+.content-center div span, .index-footer span {
+    color: #fff;
+    font-size: 1.2em;
+    font-family: "century Gothic", "黑体";
+}
+
+.content-center .content-center-div:nth-child(1) {
+    border-right: 2px dashed #fff;
+}
+
+.content-center-div span {
+    display: block;
+    text-align: center;
+}
+
+.content-center-div span:nth-child(2) {
+    font-size: 1.1em;
+}
+
+
+@media (max-width: 992px) {
+    .logo-a, .logo-a:hover {
+        color: rgba(0, 0, 0, 0);
+    }
+
+    .logo-a span {
+        display: none;
+    }
+
+    .content-div-top p {
+        line-height: 60px;
+    }
+
+    .content-div-top {
+        margin: 0px;
+    }
+
+    .content-div-bottom {
+        margin: 0px auto 0px;
+        padding: 0px;
+    }
+
+    .content-center {
+        line-height: 40px;
+    }
+
+    .content-center .content-center-div:nth-child(1) {
+        border-bottom: 2px dashed #fff;
+        border-right: none;
+        width: 160px;
+        margin: 0px auto;
+    }
+
+    .content-btn-login {
+        display: block;
+        width: 180px;
+    }
+
+    .content-right {
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .index-footer{
+        bottom: 34px;
+    }
+}
+
+.content-center-function {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+@media (max-width: 996px) {
+    .content-center-function {
+        padding-top: 15px;
+    }
+}
+
+.content-center-function span {
+    font-size: 1.2em;
+}
+
+.content-center-function span {
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+.content-center-function span:hover {
+    color: #03b5ff;
+}
+
+.download {
+    text-align: center;
+}
+
+.download a img {
+    height: 60px;
+    margin-right: 23px;
+}
+
+.download > img {
+    width: 70%;
+    margin: 22px auto;
+}
+
+@media (max-width: 436px) {
+    .download a img {
+        margin-top: 18px;
+    }
+}
+
+.footer {
+    display: block;
+    text-align: center;
+    background-color: #505050;
+    height: auto;
+}
+
+.footer div a p {
+    color: #bbb;
+    font: 1em/16px "arial", "微软雅黑";
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+.footer p:hover {
+    color: #fff;
+}
+
+.footer .row:nth-child(1) {
+    margin-top: 10px;
+}
+
+.footer .row .col-md-4 {
+    border-right: 1px dotted #bbb;
+    margin-top: 12px;
+}
+
+.footer .row .contact-div .abc {
+    visibility: hidden;
+}
+
+@media (max-width: 892px) {
+    .footer .row .contact-div .abc {
+        display: none !important;
+    }
+}
+
+.footer-bottom a {
+    color: #B4B4B4;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -ms-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+
+.footer .row:nth-child(2) p {
+    text-align: center;
+    line-height: 26px;
+    color: #B4B4B4;
+    font-family: "Microsoft Yahei";
+    font-size: 8px;
+}
