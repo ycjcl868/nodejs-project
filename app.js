@@ -5,7 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
-var cors = require('cors');
 
 
 var routes = require('./routes/index');
@@ -69,7 +68,7 @@ app.get('/question',function(req,res){
 })
 
  //接口部分
-app.use('/api/',cors(),api);
+app.use('/api/',api);
 
 
 //测试页面
