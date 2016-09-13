@@ -35,7 +35,7 @@ app.use(session({
 
 
 
-var server = app.listen(80,function(){
+var server = app.listen(3005,function(){
   var port = server.address().port;
   console.log("服务器启动:http://localhost:%s",port);
 })
@@ -65,6 +65,14 @@ app.get('/contact',function(req,res){
 })
 app.get('/question',function(req,res){
   res.render('pages/question',{title:'Class+常见问题'});
+});
+
+app.get('/grade',function(req,res){
+  res.render('grade');
+});
+
+app.get('/recommend',function(req,res){
+  res.render('recommend');
 })
 
  //接口部分

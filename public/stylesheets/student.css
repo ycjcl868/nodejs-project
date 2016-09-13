@@ -1,0 +1,425 @@
+body {
+    text-align: center;
+    background: #dbdddd;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0px auto;
+    padding: 0 7px;    
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 740px;
+    }
+}
+
+
+.list-header{
+    width: 100%;
+    height:50px;
+    background: #00aff0;
+    line-height: 50px;
+    position: relative;
+    margin-left: 0px;
+}
+.list-header span,
+.list-header a{
+    font-size: 1.5em;
+    font-family: "century Gothic", "黑体";
+    color: #fff;
+    text-decoration: none;
+}
+.back-icon{
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-size: 1.5em;
+}
+
+
+.header {
+    height: 100px;
+    width: 100%;
+    margin: 30px 0px auto;
+}
+
+.header-div-left {
+    float: left;
+}
+
+.header-div-left,
+.header-div-right {
+    width: 70px;
+}
+
+.header-div-left > span,
+.header-div-right > span {
+    margin: 0px auto;
+}
+
+.header-div-left .level {
+    width: 70px;
+    height: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    border-radius: 70px;
+    border: 5px solid #00aff0;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+.header-div-left .level span {
+    color: #00aff0;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.header-div-left > span,
+.header-div-right > span,
+.header-div-center .center-center .times > span,
+.center-center span {
+    font-family: "century Gothic", "黑体";
+}
+
+.header-div-right {
+    float: right;
+}
+
+
+.header-div-right span {
+    display: block;
+    margin: 0px auto;
+    cursor:pointer;
+}
+
+.header-div-right img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    border-radius: 70px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: right;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.header-div-center {
+    margin: 0px auto;
+    display: inline-block;
+}
+
+.center-left,
+.center-right {
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    border: 2px solid #00aff0;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 27px;
+    margin-top: 22px;
+    position: relative;
+}
+
+.student-arrow-left,
+.student-arrow-right {
+    margin-top: 0px;
+
+}
+
+.center-left i,
+.center-right i {
+    color: #00aff0;
+}
+
+.center-center {
+    float: left;
+    margin: 3px 8px;
+}
+
+.center-center .times {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    border: 5px solid #00aff0;
+    display: inline-block;
+    line-height: 30px;
+    margin-top: 6px;
+}
+
+.center-center .times > span {
+    color: #00aff0;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 40px;
+
+}
+
+.center-right {
+    float: right;
+}
+
+@media (max-width: 400px) {
+    .header-div-left,
+    .header-div-right img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-div-right {
+        width: 50px;
+    }
+
+    .header-div-left .level {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .header-div-left .level span {
+        line-height: 30px;
+        font-size: 1.9em;
+
+    }
+
+    .header-div-left > span,
+    .header-div-right > span {
+        font-size: 0.5em;
+    }
+
+    .header-div-right a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .center-center {
+        width: 98px;
+        margin: 6px 5px;
+    }
+
+    .center-center .times {
+        width: 40px;
+        height: 40px;
+    }
+
+    .center-center .times > span {
+        font-size: 2em;
+        line-height: 30px;
+    }
+
+}
+
+.divider {
+    width: 100%;
+    display: inline-block;
+    margin: 14px auto;
+}
+
+.divider span {
+    text-align: center;
+    font-family: "century Gothic", "黑体";
+    font-size: 1.2em;
+}
+
+.divider .pull-left,
+.divider .pull-right {
+    width: 34%;
+    margin-top: 14px;
+}
+
+.subjects-div,
+.rate,
+.rank {
+    margin: 16px auto;
+}
+
+.subjects {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+.subjects-chart {
+    height: 200px;
+    width: 100%;
+}
+
+.subjects .subjects-grades {
+    float: left;
+    position: absolute;
+    top: 42%;
+    left: 37%;
+    color: #00aff0;
+    font-size: 2.5em;
+    font-family: "century Gothic", "黑体";
+    letter-spacing: -3px;
+}
+
+.subjects .grades-varies {
+    position: absolute;
+    top: 90%;
+    left: 46%;
+    text-decoration: none;
+}
+
+.red {
+    color: red;
+}
+.rank{
+    margin-left: 0px;
+}
+
+.ranks {
+    width: 123px;
+    height: 123px;
+    display: inline-block;
+    margin-right: 65px;
+}
+
+.rank .rank-div {
+    width: 100%;
+    height: 100%;
+    background: #00aff0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    padding: 0px;
+
+}
+
+.rank .rank-div span {
+    position: absolute;
+    top: 39%;
+    left: 22%;
+    color: #fff;
+    font-size: 1.6em;
+    font-family: "arial", "微软雅黑";
+}
+
+@media (max-width: 655px) {
+    .subjects-div,
+    .rate,{
+
+    }
+    .ranks{
+        width: 86px;
+        height: 86px;
+        margin-right: 8px;
+    }
+    .rank .rank-div span{
+        font-size: 1.2em;
+
+    }
+
+    .subjects {
+        position: relative;
+        display: inline-block;
+        width: 86px;
+        height: 104px;
+    }
+
+    .subjects-chart {
+        height: 100%;
+        width: 100%;
+    }
+
+    .subjects .subjects-grades {
+        top: 41%;
+        left: 37%;
+        font-size: 1.5em;
+    }
+
+    .subjects .grades-varies {
+        top: 87%;
+        left: 30%;
+    }
+
+}
+
+.student-subjects {
+    font-size: 3em;
+    color: #00aff0;
+    font-family: "century Gothic", "黑体";
+}
+
+.student-divider-number {
+    width: 30%;
+    margin: 5px auto;
+}
+
+@media (max-width: 655px) {
+    .student-divider-number {
+        width: 48%;
+    }
+
+}
+
+.student-divider-number .center-center {
+    display: inline;
+    float: none;
+}
+
+.student-divider-number span {
+    font-size: 2em;
+    line-height: 65px;
+    color: #00aff0;
+}
+
+.background {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.progressBar {
+    display: block;
+    width: 253px;
+    height: 56px;
+    top: 50%;
+    left: 40%;
+    margin-left: -74px;
+    margin-top: -14px;
+    padding: 10px 10px 10px 50px;
+    text-align: left;
+    line-height: 27px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2001;
+    border: solid 2px #86A5AD;
+}
+
+
+.subject-i {
+    top: 23%;
+    position: absolute;
+    left: 27%;
+}

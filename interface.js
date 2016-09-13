@@ -5,7 +5,7 @@ var router  = express.Router();
 
 // 登陆
 router.get('/login',post.login);
-router.get('/test',get.do);
+// router.get('/test',get.do);
 
 
 module.exports = router;

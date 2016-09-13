@@ -5,7 +5,7 @@ var crypto = require('crypto');
 exports.login = function(req,res,next){
     //测试get请求
     var post_options = {
-        host: '115.28.26.202',
+        host: '120.27.121.200',
         port: '80',
         path: '/ClassPlus/user/login',
         method: 'post',

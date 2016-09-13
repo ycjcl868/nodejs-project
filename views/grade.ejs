@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+    <title>Class+成绩分析</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--压缩-->
+    <meta http-equiv="content-encoding" content="application/gzip">
+    <!--用于清除缓存-->
+    <meta http-equiv="pragma" content="public">
+    <meta http-equiv="cache-control" content="public">
+    <meta http-equiv="expires" content="Dec, 31 Dec 2015 16:00:00 GMT">
+    <!--移动端-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!--  Meta -->
+    <!--css初始化-->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/font-awesome.min.css"/>
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css"/>-->
+    <!--<link rel="stylesheet" href="css/font-awesome.min.css"/>-->
+    <!--Radar图-->
+    <link rel="stylesheet" href="/stylesheets/radar-chart.min.css">
+    <!--响应式框架-->
+    <link rel="stylesheet" href="/stylesheets/student.css"/>
+    <!--自写style-->
+
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row header">
+        <div class="header-div-left">
+            <div class="level">
+                <span>A</span>
+            </div>
+            <span>稳定指数</span>
+        </div>
+        <div class="header-div-center">
+            <a id="left-grade" href="#">
+                <div class="center-left"><i class="center-left-i icon-arrow-left"></i></div>
+            </a>
+
+            <div class="center-center">
+                <span>第</span>
+
+                <div class="times">
+                    <span id="times">1</span>
+                </div>
+                <span>次</span>
+            </div>
+            <a id="right-grade" href="#">
+                <div class="center-right"><i class="center-right-i icon-arrow-right"></i></div>
+            </a>
+        </div>
+        <div class="header-div-right">
+            <a href="">
+                <img id="pict" src="/images/logo.png" alt="">
+            </a>
+            <span id="classname">信鑫班</span>
+        </div>
+
+
+    </div>
+
+    <div class="row-fluid">
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    </div>
+
+    <div class="divider">
+        <hr class="pull-left"/>
+        <span>成绩分析</span>
+        <hr class="pull-right"/>
+    </div>
+
+
+    <div class="row subjects-div">
+        <!--语文-->
+        <div class="subjects">
+            <a href="#">
+                <div id="chinese" class="subjects-chart"></div>
+                <span class="subjects-grades"></span>
+                <span class="grades-varies"></span>
+            </a>
+        </div>
+        <!--数学-->
+        <div class="subjects">
+            <a href="#">
+                <div id="math" class="subjects-chart"></div>
+                <span class="subjects-grades"></span>
+                <span class="grades-varies"></span>
+            </a>
+        </div>
+        <!--英语-->
+        <div class="subjects">
+            <a href="#">
+                <div id="english" class="subjects-chart"></div>
+                <span class="subjects-grades"></span>
+                <span class="grades-varies"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="row subjects-div">
+        <!--物理-->
+        <div class="subjects">
+            <a href="#">
+                <div id="physics" class="subjects-chart"></div>
+                <span class="subjects-grades"></span>
+                <span class="grades-varies"></span>
+            </a>
+        </div>
+        <!--化学-->
+        <div class="subjects">
+            <a href="#&account=">
+                <div id="chemistry" class="subjects-chart"></div>
+                <span class="subjects-grades"></span>
+                <span class="grades-varies"></span>
+            </a>
+        </div>
+        <!--生物-->
+        <div class="subjects">
+            <a href="#">
+                <div id="biology" class="subjects-chart"></div>
+                <span class="subjects-grades"></span>
+                <span class="grades-varies"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="row subjects-div">
+
+        <!--政治-->
+        <div class="subjects">
+            <a href="#">
+                <div id="politics" class="subjects-chart"></div>
+                <span class="subjects-grades"></span>
+                <span class="grades-varies"></span>
+            </a>
+        </div>
+
+        <!--历史-->
+        <div class="subjects">
+            <a href="#">
+                <div id="history" class="subjects-chart"></div>
+                <span class="subjects-grades"></span>
+                <span class="grades-varies"></span>
+            </a>
+        </div>
+
+
+        <!--地理-->
+        <div class="subjects">
+            <a href="#">
+                <div id="geography" class="subjects-chart"></div>
+                <span class="subjects-grades"></span>
+                <span class="grades-varies"></span>
+            </a>
+        </div>
+
+        <script>
+
+
+        </script>
+    </div>
+
+
+    <div class="divider">
+        <hr class="pull-left"/>
+        <span>优秀率</span>
+        <hr class="pull-right"/>
+    </div>
+
+    <div class="row rate">
+        <!--优秀率-->
+        <div class="subjects">
+            <a href="#">
+                <div id="good" class="subjects-chart"></div>
+                <span class="subjects-grades"></span>
+                <span class="grades-varies"></span>
+            </a>
+        </div>
+        <!--及格率-->
+        <div class="subjects">
+            <a href="#">
+                <div id="pass" class="subjects-chart"></div>
+                <span class="subjects-grades"></span>
+                <span class="grades-varies"></span>
+            </a>
+        </div>
+        <!--不及格率-->
+        <div class="subjects">
+            <a href="#">
+                <div id="fail" class="subjects-chart"></div>
+                <span class="subjects-grades"></span>
+                <span class="grades-varies"></span>
+            </a>
+        </div>
+    </div>
+    <!--雷达分析图-->
+    <div class="divider">
+        <hr class="pull-left"/>
+        <span>雷达图</span>
+        <hr class="pull-right"/>
+    </div>
+    <div class="chart-container"></div>
+</div>
+
+<div id="background" class="background" style="display: none; "></div>
+<div id="progressBar" class="progressBar" style="display: none; "><i class="icon-2x icon-spinner icon-spin"></i>成绩加载中，请稍等...
+</div>
+
+
+<script src="/javascripts/jquery-1.11.3.min.js"></script>
+<script src="/javascripts/canvas.js"></script>
+<script src="/javascripts/student.js"></script>
+<script src="/javascripts/d3.min.js"></script>
+<script src="/javascripts/radar-chart.min.js"></script>
+</body>
+</html>
+
+
+
+
